@@ -1,0 +1,97 @@
+.food-filter {
+  position: relative;
+  background-color: beige;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 200px;
+}
+
+.food-filter__category-list {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.food-filter__food-list {
+  padding-top: 3px;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0px;
+  width: 150px;
+  z-index: -1;
+  visibility: hidden;
+  transition: right 0.2s linear, visibility 0s 0.2s;
+}
+
+.show {
+  z-index: 0;
+  visibility: visible;
+  transition: right 0.2s linear, visibility 0s, z-index 0s 0.2s;
+  right: -150px;
+}
+
+.food-filter__name {
+  height: fit-content;
+  width: 100%;
+  height: 30px;
+  background-color: beige;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+}
+
+.food-filter__name:nth-child(6) {
+  border-bottom: none;
+}
+
+.food-filter__food-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.food-filter-label {
+  cursor: pointer;
+}
+
+.food-filter-label::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #adb5bd;
+  border-radius: 2px;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70% 70%;
+}
+
+.food-filter__cross-button {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  padding: 2px;
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
+}
+
+.food-filter__clear-food {
+  cursor: pointer;
+  color: #0b76ef;
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
+.food-filter__food-checkbox:checked + .food-filter-label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url(../../images/checkmark_z6kmf49iqefw.svg);
+}

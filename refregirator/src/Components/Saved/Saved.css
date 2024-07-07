@@ -1,0 +1,17 @@
+.saved__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.saved__name {
+  text-align: center;
+}
+
+.saved__choose-button {
+  cursor: pointer;
+  height: 25px;
+  background-color: lightgreen;
+  border: 1px solid grey;
+  border-radius: 7px;
+}

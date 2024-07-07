@@ -1,0 +1,234 @@
+.visualization {
+  padding: 20px 50px;
+}
+
+.visualization__save {
+  width: 100%;
+  height: 26px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.visualization__save-name {
+  text-align: center;
+  height: 20px;
+  outline: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid grey;
+  margin-right: 15px;
+}
+
+.visualization__save-name:focus {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid lightskyblue;
+}
+
+.visualization__main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.visualization__refregirator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.visualization__inside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visualization__boxes {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-for-images {
+  align-items: center;
+  justify-items: center;
+}
+
+.visualization__door {
+  --padding: 30px;
+  --width: calc(250px - var(--padding) * 2);
+  --height: calc(150px - var(--padding) * 2);
+  padding: var(--padding);
+  width: var(--width);
+  height: var(--height);
+  background-image: url("../../images/shelf.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  --row-count: 2;
+  --column-count: 3;
+  display: grid;
+  grid-template-columns: repeat(
+    var(--column-count),
+    calc(var(--width) / var(--column-count))
+  );
+  grid-template-rows: repeat(
+    var(--row-count),
+    calc(var(--height) / var(--row-count))
+  );
+}
+.visualization__firstShelf {
+  --padding: 30px;
+  --width: calc(250px - var(--padding) * 2);
+  --height: calc(150px - var(--padding) * 2);
+  padding: var(--padding);
+  width: var(--width);
+  height: var(--height);
+  background-image: url("../../images/shelf.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  --row-count: 2;
+  --column-count: 3;
+  display: grid;
+  grid-template-columns: repeat(
+    var(--column-count),
+    calc(var(--width) / var(--column-count))
+  );
+  grid-template-rows: repeat(
+    var(--row-count),
+    calc(var(--height) / var(--row-count))
+  );
+}
+.visualization__secondShelf {
+  --padding: 30px;
+  --width: calc(250px - var(--padding) * 2);
+  --height: calc(150px - var(--padding) * 2);
+  padding: var(--padding);
+  width: var(--width);
+  height: var(--height);
+  background-image: url("../../images/shelf.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  --row-count: 2;
+  --column-count: 3;
+  display: grid;
+  grid-template-columns: repeat(
+    var(--column-count),
+    calc(var(--width) / var(--column-count))
+  );
+  grid-template-rows: repeat(
+    var(--row-count),
+    calc(var(--height) / var(--row-count))
+  );
+}
+.visualization__thirdShelf {
+  --padding: 30px;
+  --width: calc(250px - var(--padding) * 2);
+  --height: calc(150px - var(--padding) * 2);
+  padding: var(--padding);
+  width: var(--width);
+  height: var(--height);
+  background-image: url("../../images/shelf.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  --row-count: 2;
+  --column-count: 3;
+  display: grid;
+  grid-template-columns: repeat(
+    var(--column-count),
+    calc(var(--width) / var(--column-count))
+  );
+  grid-template-rows: repeat(
+    var(--row-count),
+    calc(var(--height) / var(--row-count))
+  );
+}
+.visualization__fruitsBox {
+  --padding: 30px;
+  --width: calc(250px - var(--padding) * 2);
+  --height: calc(150px - var(--padding) * 2);
+  padding: var(--padding);
+  width: var(--width);
+  height: var(--height);
+  background-image: url("../../images/shelf.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  --row-count: 2;
+  --column-count: 3;
+  display: grid;
+  grid-template-columns: repeat(
+    var(--column-count),
+    calc(var(--width) / var(--column-count))
+  );
+  grid-template-rows: repeat(
+    var(--row-count),
+    calc(var(--height) / var(--row-count))
+  );
+}
+.visualization__vegteablesBox {
+  --padding: 30px;
+  --width: calc(250px - var(--padding) * 2);
+  --height: calc(150px - var(--padding) * 2);
+  padding: var(--padding);
+  width: var(--width);
+  height: var(--height);
+  background-image: url("../../images/shelf.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  --row-count: 2;
+  --column-count: 3;
+  display: grid;
+  grid-template-columns: repeat(
+    var(--column-count),
+    calc(var(--width) / var(--column-count))
+  );
+  grid-template-rows: repeat(
+    var(--row-count),
+    calc(var(--height) / var(--row-count))
+  );
+}
+.visualization__outside {
+  --padding: 30px;
+  --width: calc(250px - var(--padding) * 2);
+  --height: calc(150px - var(--padding) * 2);
+  padding: var(--padding);
+  width: var(--width);
+  height: var(--height);
+  background-image: url("../../images/shelf.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  --row-count: 2;
+  --column-count: 3;
+  display: grid;
+  grid-template-columns: repeat(
+    var(--column-count),
+    calc(var(--width) / var(--column-count))
+  );
+  grid-template-rows: repeat(
+    var(--row-count),
+    calc(var(--height) / var(--row-count))
+  );
+}
+
+.visualization__image {
+  width: 50px;
+  height: 50px;
+}
