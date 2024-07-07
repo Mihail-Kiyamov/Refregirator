@@ -23,11 +23,14 @@ function App() {
       <Header />
       <Routes>
         <Route
-          path="/"
+          path="/Refregirator"
           element={<Main saved={saved} onClear={handleClear} />}
         />
-        <Route path="/saved" element={<Saved onChoose={handleSetSaved} />} />
-        <Route path="/about" element={<Main />} />
+        <Route
+          path="/Refregirator/saved"
+          element={<Saved onChoose={handleSetSaved} />}
+        />
+        <Route path="/Refregirator/about" element={<Main />} />
       </Routes>
     </div>
   );
