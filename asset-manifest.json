@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Refregirator/static/css/main.c99b4365.css",
-    "main.js": "/Refregirator/static/js/main.0901d2fc.js",
+    "main.js": "/Refregirator/static/js/main.bd04f9b2.js",
     "static/js/453.f61ae3e8.chunk.js": "/Refregirator/static/js/453.f61ae3e8.chunk.js",
     "static/media/refregirator_icon.png": "/Refregirator/static/media/refregirator_icon.64b182dabd60b92c6630.png",
     "static/media/smoked-fish.png": "/Refregirator/static/media/smoked-fish.3972ff84b255c5f1eeda.png",
@@ -10,11 +10,11 @@
     "static/media/vectorpaint.svg": "/Refregirator/static/media/vectorpaint.e54235054e3c471e0b1b833491d4844a.svg",
     "static/media/checkmark_z6kmf49iqefw.svg": "/Refregirator/static/media/checkmark_z6kmf49iqefw.3952ed3e69ab1671dfe7.svg",
     "main.c99b4365.css.map": "/Refregirator/static/css/main.c99b4365.css.map",
-    "main.0901d2fc.js.map": "/Refregirator/static/js/main.0901d2fc.js.map",
+    "main.bd04f9b2.js.map": "/Refregirator/static/js/main.bd04f9b2.js.map",
     "453.f61ae3e8.chunk.js.map": "/Refregirator/static/js/453.f61ae3e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c99b4365.css",
-    "static/js/main.0901d2fc.js"
+    "static/js/main.bd04f9b2.js"
   ]
 }
