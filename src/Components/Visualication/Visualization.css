@@ -1,9 +1,12 @@
 .visualization {
-  padding: 20px 50px;
+  padding: 10px 50px;
+  width: 1200px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visualization__save {
-  width: 100%;
   height: 26px;
   margin-bottom: 10px;
   display: flex;
@@ -28,7 +31,16 @@
   border-bottom: 2px solid lightskyblue;
 }
 
+.visualization__save-submit {
+  cursor: pointer;
+  height: 25px;
+  background-color: lightskyblue;
+  border: 1px solid grey;
+  border-radius: 7px;
+}
+
 .visualization__main {
+  margin-top: 20px;
   display: flex;
   flex-grow: 1;
   flex-direction: row;
@@ -54,9 +66,27 @@
   flex-direction: row;
 }
 
-.grid-for-images {
+.refregirator-place {
+  margin: 5px;
+  position: relative;
   align-items: center;
   justify-items: center;
+  border: 2px solid #37e58b;
+
+  display: grid;
+  grid-template-columns: repeat(
+    var(--column-count),
+    calc(var(--width) / var(--column-count))
+  );
+  grid-template-rows: repeat(
+    var(--row-count),
+    calc(var(--height) / var(--row-count))
+  );
+}
+
+.refregirator-place::before {
+  position: absolute;
+  top: 0;
 }
 
 .visualization__door {
@@ -66,23 +96,15 @@
   padding: var(--padding);
   width: var(--width);
   height: var(--height);
-  background-image: url("../../images/shelf.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 
   --row-count: 2;
   --column-count: 3;
-  display: grid;
-  grid-template-columns: repeat(
-    var(--column-count),
-    calc(var(--width) / var(--column-count))
-  );
-  grid-template-rows: repeat(
-    var(--row-count),
-    calc(var(--height) / var(--row-count))
-  );
 }
+
+.visualization__door::before {
+  content: "Дверь";
+}
+
 .visualization__firstShelf {
   --padding: 30px;
   --width: calc(250px - var(--padding) * 2);
@@ -90,23 +112,15 @@
   padding: var(--padding);
   width: var(--width);
   height: var(--height);
-  background-image: url("../../images/shelf.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 
   --row-count: 2;
   --column-count: 3;
-  display: grid;
-  grid-template-columns: repeat(
-    var(--column-count),
-    calc(var(--width) / var(--column-count))
-  );
-  grid-template-rows: repeat(
-    var(--row-count),
-    calc(var(--height) / var(--row-count))
-  );
 }
+
+.visualization__firstShelf::before {
+  content: "Первая полка";
+}
+
 .visualization__secondShelf {
   --padding: 30px;
   --width: calc(250px - var(--padding) * 2);
@@ -114,23 +128,15 @@
   padding: var(--padding);
   width: var(--width);
   height: var(--height);
-  background-image: url("../../images/shelf.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 
   --row-count: 2;
   --column-count: 3;
-  display: grid;
-  grid-template-columns: repeat(
-    var(--column-count),
-    calc(var(--width) / var(--column-count))
-  );
-  grid-template-rows: repeat(
-    var(--row-count),
-    calc(var(--height) / var(--row-count))
-  );
 }
+
+.visualization__secondShelf::before {
+  content: "Вторая полка";
+}
+
 .visualization__thirdShelf {
   --padding: 30px;
   --width: calc(250px - var(--padding) * 2);
@@ -138,23 +144,15 @@
   padding: var(--padding);
   width: var(--width);
   height: var(--height);
-  background-image: url("../../images/shelf.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 
   --row-count: 2;
   --column-count: 3;
-  display: grid;
-  grid-template-columns: repeat(
-    var(--column-count),
-    calc(var(--width) / var(--column-count))
-  );
-  grid-template-rows: repeat(
-    var(--row-count),
-    calc(var(--height) / var(--row-count))
-  );
 }
+
+.visualization__thirdShelf::before {
+  content: "Третья полка";
+}
+
 .visualization__fruitsBox {
   --padding: 30px;
   --width: calc(250px - var(--padding) * 2);
@@ -162,23 +160,15 @@
   padding: var(--padding);
   width: var(--width);
   height: var(--height);
-  background-image: url("../../images/shelf.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 
   --row-count: 2;
   --column-count: 3;
-  display: grid;
-  grid-template-columns: repeat(
-    var(--column-count),
-    calc(var(--width) / var(--column-count))
-  );
-  grid-template-rows: repeat(
-    var(--row-count),
-    calc(var(--height) / var(--row-count))
-  );
 }
+
+.visualization__fruitsBox::before {
+  content: "Ящик для фруктов";
+}
+
 .visualization__vegteablesBox {
   --padding: 30px;
   --width: calc(250px - var(--padding) * 2);
@@ -186,23 +176,15 @@
   padding: var(--padding);
   width: var(--width);
   height: var(--height);
-  background-image: url("../../images/shelf.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 
   --row-count: 2;
   --column-count: 3;
-  display: grid;
-  grid-template-columns: repeat(
-    var(--column-count),
-    calc(var(--width) / var(--column-count))
-  );
-  grid-template-rows: repeat(
-    var(--row-count),
-    calc(var(--height) / var(--row-count))
-  );
 }
+
+.visualization__vegteablesBox::before {
+  content: "Ящик для овощей";
+}
+
 .visualization__outside {
   --padding: 30px;
   --width: calc(250px - var(--padding) * 2);
@@ -210,22 +192,13 @@
   padding: var(--padding);
   width: var(--width);
   height: var(--height);
-  background-image: url("../../images/shelf.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 
   --row-count: 2;
   --column-count: 3;
-  display: grid;
-  grid-template-columns: repeat(
-    var(--column-count),
-    calc(var(--width) / var(--column-count))
-  );
-  grid-template-rows: repeat(
-    var(--row-count),
-    calc(var(--height) / var(--row-count))
-  );
+}
+
+.visualization__outside::before {
+  content: "Снаружи";
 }
 
 .visualization__image {

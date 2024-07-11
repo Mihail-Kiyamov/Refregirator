@@ -1,0 +1,11 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.about__text {
+  width: 70%;
+}

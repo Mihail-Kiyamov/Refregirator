@@ -3,11 +3,17 @@
   flex-direction: row;
   background-color: cadetblue;
   align-items: center;
+  font-size: 25px;
 }
 
 .header__link {
   margin-right: 30px;
   text-decoration: none;
+}
+
+.header__link:visited {
+  text-decoration: none;
+  color: black;
 }
 
 .header__logo {

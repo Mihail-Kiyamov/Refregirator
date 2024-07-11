@@ -120,7 +120,7 @@ function Visualization({ list, savedName, saved, onSave }) {
         <div className="visualization__refregirator">
           <div className="visualization__inside">
             <div
-              className="visualization__firstShelf grid-for-images"
+              className="visualization__firstShelf refregirator-place"
               ref={firstShelfElement}
             >
               {firstShelf.map((item, index) => {
@@ -135,7 +135,7 @@ function Visualization({ list, savedName, saved, onSave }) {
               })}
             </div>
             <div
-              className="visualization__secondShelf grid-for-images"
+              className="visualization__secondShelf refregirator-place"
               ref={secondShelfElement}
             >
               {secondShelf.map((item, index) => {
@@ -150,7 +150,7 @@ function Visualization({ list, savedName, saved, onSave }) {
               })}
             </div>
             <div
-              className="visualization__thirdShelf grid-for-images"
+              className="visualization__thirdShelf refregirator-place"
               ref={thirdShelfElement}
             >
               {thirdShelf.map((item, index) => {
@@ -166,7 +166,7 @@ function Visualization({ list, savedName, saved, onSave }) {
             </div>
             <div className="visualization__boxes">
               <div
-                className="visualization__fruitsBox grid-for-images"
+                className="visualization__fruitsBox refregirator-place"
                 ref={fruitsBoxElement}
               >
                 {fruitsBox.map((item, index) => {
@@ -181,7 +181,7 @@ function Visualization({ list, savedName, saved, onSave }) {
                 })}
               </div>
               <div
-                className="visualization__vegteablesBox grid-for-images"
+                className="visualization__vegteablesBox refregirator-place"
                 ref={vegteablesBoxElement}
               >
                 {vegteablesBox.map((item, index) => {
@@ -198,7 +198,7 @@ function Visualization({ list, savedName, saved, onSave }) {
             </div>
           </div>
           <div
-            className="visualization__door grid-for-images"
+            className="visualization__door refregirator-place"
             ref={doorElement}
           >
             {door.map((item, index) => {
@@ -214,7 +214,7 @@ function Visualization({ list, savedName, saved, onSave }) {
           </div>
         </div>
         <div
-          className="visualization__outside grid-for-images"
+          className="visualization__outside refregirator-place"
           ref={outsideElement}
         >
           {outside.map((item, index) => {
