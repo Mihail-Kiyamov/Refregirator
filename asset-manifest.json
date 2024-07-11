@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Refregirator/static/css/main.c99b4365.css",
-    "main.js": "/Refregirator/static/js/main.0193cc21.js",
+    "main.css": "/Refregirator/static/css/main.c8dbbb61.css",
+    "main.js": "/Refregirator/static/js/main.63b319eb.js",
     "static/js/453.f61ae3e8.chunk.js": "/Refregirator/static/js/453.f61ae3e8.chunk.js",
     "static/media/refregirator_icon.png": "/Refregirator/static/media/refregirator_icon.64b182dabd60b92c6630.png",
     "static/media/smoked-fish.png": "/Refregirator/static/media/smoked-fish.3972ff84b255c5f1eeda.png",
-    "static/media/shelf.svg": "/Refregirator/static/media/shelf.9d3c7d5ea0f5a6cc0388.svg",
     "index.html": "/Refregirator/index.html",
     "static/media/vectorpaint.svg": "/Refregirator/static/media/vectorpaint.e54235054e3c471e0b1b833491d4844a.svg",
     "static/media/checkmark_z6kmf49iqefw.svg": "/Refregirator/static/media/checkmark_z6kmf49iqefw.3952ed3e69ab1671dfe7.svg",
-    "main.c99b4365.css.map": "/Refregirator/static/css/main.c99b4365.css.map",
-    "main.0193cc21.js.map": "/Refregirator/static/js/main.0193cc21.js.map",
+    "static/media/down_arrow_asxr2vdmtfwz.svg": "/Refregirator/static/media/down_arrow_asxr2vdmtfwz.19c6519ad0bf4ace39885347e780e829.svg",
+    "main.c8dbbb61.css.map": "/Refregirator/static/css/main.c8dbbb61.css.map",
+    "main.63b319eb.js.map": "/Refregirator/static/js/main.63b319eb.js.map",
     "453.f61ae3e8.chunk.js.map": "/Refregirator/static/js/453.f61ae3e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c99b4365.css",
-    "static/js/main.0193cc21.js"
+    "static/css/main.c8dbbb61.css",
+    "static/js/main.63b319eb.js"
   ]
 }
